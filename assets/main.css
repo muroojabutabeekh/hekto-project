@@ -59,7 +59,30 @@ body{
 }
 /*end header*/
 
+/*start newslater*/
 
+.newslater{
+    background-image: url('./img/public/newslater-img.webp');
+    padding: 150px 0;
+    text-align: center;
+}
+.newslater h2{
+    margin-bottom: 50px;
+    color: #151875;
+    font-size: 35px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.newslater span{
+    display: block;
+}
+.btn-shop{
+    transition: all 0.5s;
+}
+.btn-shop:hover{
+    background-color: #8A8FB9;
+}
+/*end newslater*/
 
 /*start client*/
 .clients{
