@@ -44,7 +44,7 @@ body{
     width: 20px;
 }
  @media screen and (max-width:1200px) {
-    .list,.search{
+    .list,.header .search{
         display: none;
     }
     .header .bar{
@@ -58,6 +58,47 @@ body{
     
 }
 /*end header*/
+
+
+
+/*start client*/
+.clients{
+  padding: 50px 0;
+}
+.clients .row{
+    flex-wrap: nowrap;
+    gap: 15px;
+    overflow-x: auto;
+}
+.clients .logo{
+    width: calc((100% - 75px) / 6 );
+}
+.clients img{
+    width: 150px;
+    height: 150px;
+}
+@media screen and (max-width:1030px){
+    .clients .logo{
+        width: calc((100% - 45px) / 4);
+    }
+}
+@media screen and (max-width:900px){
+    .clients .logo{
+        width: calc((100% - 30px) / 3);
+    }
+}
+@media screen and (max-width:700px){
+    .clients .logo{
+        width: calc((100% - 15px) / 2);
+    }
+}
+@media screen and (max-width:560px){
+    .clients .container{
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+/*end client*/
 
 /*start footer*/
 .footer{
@@ -141,8 +182,9 @@ body{
     }
     .footer .footer-item a{
        
-        align-items:flex-end;
+        align-items:flex-start;
     }
+    
     
 }
 /*end footer*/

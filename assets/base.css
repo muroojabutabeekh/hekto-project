@@ -63,3 +63,6 @@ ul{
 .w-50{
     width: 50%;
 }
+.align-center{
+    align-items: center;
+}
