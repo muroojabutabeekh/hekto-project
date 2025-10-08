@@ -12,6 +12,7 @@ ul{
 :root{
     --primary:#FB2E86;
     --mainFont:"Lato", sans-serif;
+    --secondary:#151875;
 }
 .btn{
     border: none;
@@ -39,6 +40,24 @@ ul{
 .text-white{
     color: #fff;
 }
+.text-primary{
+    color:var(--primary)
+}
+.text-secondary{
+    color: var(--secondary);
+}
+.text-secondary-2{
+    color: #8A8FB9;
+}
+.font-weight-700{
+    font-weight: 700;
+}
+.font-size-35{
+    font-size: 35px;
+}
+.font-size-20{
+    font-size: 20;
+}
 .d-flex{
     display: flex;
 }
@@ -65,4 +84,16 @@ ul{
 }
 .align-center{
     align-items: center;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.flex-1{
+    flex: 1;
 }
