@@ -426,6 +426,116 @@ margin: auto;
 
 /*end trending-products*/
 
+/*start top catagories*/
+
+.Top-Categories{
+    padding: 50px 0;
+}
+.Top-Categories .catagories-card{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 200px;
+    text-align: center;
+    gap: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.Top-Categories .catagories-card .catagory-img{
+    
+     background-color: #F6F7FB;
+      padding: 12px;
+      border-radius: 50%;
+      transition: all 0.5s; 
+      
+      
+      position: relative;  
+}
+.Top-Categories .row{
+    text-align: center;
+    padding-top: 50px;
+}
+.Top-Categories .catagories-card img{
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 50%;
+    
+}
+.Top-Categories .catagories-card .catagory-img:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+     
+}
+.Top-Categories .catagories-card .catagory-img::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -5px;
+    right: 0px;
+    bottom: -5px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+    z-index: 1;
+}
+
+.Top-Categories .catagories-card .catagory-img:hover::before{
+    border-top-color: #7E33E0;
+    border-right-color: #7E33E0;
+    transform: rotate(180deg);
+    transition: all 0.6s;
+    z-index: 1;
+}
+
+.Top-Categories .catagories-card::before{
+       display: none;
+}
+
+.details-btn a{
+    color: white;
+}
+.Top-Categories .catagories-card .details-btn {
+    padding: 6px 8px;
+    width: fit-content;
+    position: absolute;
+    bottom: 95px;
+    right: 85px;
+    display: none;
+    z-index: 2;
+}
+.details-btn{
+    transition: all 0.7s;
+}
+.catagories-card:hover .details-btn {
+    display: block;
+}
+@media screen and (max-width:1330px){
+    .Top-Categories .container{
+        width: 90%;
+    }
+}
+@media screen and (max-width:1080px){
+    .Top-Categories .container .row{
+        width: 90%;
+        gap:30px;
+        justify-content: center;
+    }
+    .Top-Categories .catagories-card{
+        padding-left: 30px;
+    }
+}
+@media screen and (max-width:1050px){
+    .Top-Categories .catagories-card img{
+        width: 150px;
+        height: 150px;
+    }
+    .Top-Categories .catagory-info h3,span{
+        font-size: 15px;
+    }
+}
+/*end top catagories*/
+
 /*start featured-product*/
 
 .featured-product{
