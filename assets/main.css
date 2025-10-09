@@ -128,7 +128,213 @@ body{
 
 /*end hero*/
 
+/*start leatest products*/
 
+.leatest-products{
+    padding: 50px 0;
+}
+.leatest-products .container .header-section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
+.leatest-products .container nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    color: #151875;
+}
+.leatest-products .container a{
+    gap: 50px;
+}
+.leatest-products .active{
+ color:var(--primary);
+ text-decoration: underline;
+}
+
+.leatest-products .products{
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    
+   
+}
+ .products .product-card {
+    width: calc((100% - 60px) / 3);
+    padding:60px 30px;
+    
+}
+.product-card img{
+    background-color: #F7F7F7;
+    border-radius: 5px;
+    padding: 15px 70px;
+    width:360px ;
+    height: 360px;
+    object-fit:contain;
+    
+    
+}
+.leatest-products .product-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.leatest-products .product-info h3{
+    
+    text-decoration-color: #EEEFFB;
+    text-decoration-line: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 5px;
+}
+
+
+.leatest-products .badge-sale {
+    position: absolute;
+    bottom: -250px;;
+    right: 800px;
+    z-index: 2;
+}
+
+.products .badge-sale img{
+    width: 100px;
+}
+.leatest-products .products img{
+ transition: all 0.5s;
+}
+.leatest-products .products .img:hover img{
+    background-color: white;
+}
+ .product-card{
+    position: relative;
+}
+ .product-card .icons{
+    position: absolute;
+    top:246px;
+    left: 46px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    z-index: 2;
+    opacity: 0;
+    transition: all 0.5s;
+    color: #2F1AC4;
+}
+  .product-card:hover .icons{
+    opacity: 1;
+}
+  .product-card .icons img{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    padding: 8px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+ .products .product-card  .icons img:hover{
+    background-color: #EEEFFB;
+}
+@media screen and (max-width:1420px){
+    
+    .products .badge-sale img{
+        display: none;
+    }
+        .leatest-products .products .product-card{
+            width:40%;
+        }
+     
+    
+}
+@media screen and (max-width:1170px){
+
+     .leatest-products .products .product-card{
+            width:50%;
+           
+        }  
+}
+@media screen and (max-width:900px){
+ 
+     .products{
+        flex: 1 0 150px;
+        flex-direction: column;
+        align-items: flex-start;
+        
+     }
+     .products .product-card{
+        padding-bottom: 5px;
+     }
+}
+@media screen and (max-width:660px){
+
+     .leatest-products .container{
+        width: 100%; 
+     }
+     
+     .products .product-card img{
+            width: 300px;
+            height: 300px;
+        }  
+        .products .container{
+          width: 90%;
+        }
+        .products .product-info h3{
+            width: 200px;
+        }
+        .products .product-info span{
+            width: 50%;
+        }
+}
+@media screen and (max-width:640px){
+
+     .products .product-card{
+margin: auto;
+     }
+}
+@media screen and (max-width:550px){
+
+     .products .product-card{
+           margin: auto;
+           width: 400px;
+           height: 400px;
+     }
+       .products .product-card img{
+          
+          width: 250px;
+          height: 250px;
+     }
+}
+@media screen and (max-width:450px){
+
+     .products .product-card{
+           margin: auto;
+           width: 300px;
+           height: 300px;
+           margin-left: 70px;
+        
+     }
+     
+}
+@media screen and (max-width:410px){
+
+     .products .product-card{
+           margin: auto;
+           width: 300px;
+           height: 300px;
+           margin-left: 50px;
+        
+     }
+     
+}
+
+
+/*end leatest products*/
 
 /*start featured-product*/
 
