@@ -77,6 +77,10 @@ ul{
     text-decoration: line-through;
     color: red;
 }
+.line-cross-anothcolor{
+    text-decoration: line-through;
+    color: #8A8FB9;
+}
 .d-flex{
     display: flex;
 }
@@ -94,6 +98,9 @@ ul{
 }
 .gap-4{
     gap: 10px;
+}
+.gap-30{
+    gap: 30px;
 }
 .w-60{
     width: 60%;

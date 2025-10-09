@@ -203,6 +203,7 @@ body{
 
 .products .badge-sale img{
     width: 100px;
+    display: none;
 }
 .leatest-products .products img{
  transition: all 0.5s;
@@ -345,7 +346,7 @@ margin: auto;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    gap: px;
+    
     flex: 1 0 150px;
     padding: 70px 20px;
     text-align: center;
@@ -370,6 +371,60 @@ margin: auto;
     }
 }
 /*end shopex offer*/
+
+/*start trending-products*/
+
+.trending-products{
+    padding: 50px 0;
+}
+.trending-products .trend-card{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 200px;
+    padding: 70px 20px;
+    text-align: center;
+    gap: 20px;
+    box-shadow: 0 3px 2px #EEEFFB;
+    border-radius: 5px;
+    
+   
+}
+.trending-products .row{
+     text-align: center;
+}
+.trending-products .trend-card .trend-img{
+    
+     background-color: #F7F7F7;
+      padding: 12px;
+}
+.trending-products .trend-card img{
+    width: 200px;
+    height: 200px;
+   
+    
+}
+.trending-products .trend-info{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    
+}
+.trending-products .trend-info .trend-price{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    align-items: flex-end;
+}
+@media screen and (max-width:880px){
+    .trending-products .container{
+        width: 90%;
+    }
+    
+}
+
+/*end trending-products*/
 
 /*start featured-product*/
 
